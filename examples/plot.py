@@ -44,6 +44,7 @@ if __name__ == '__main__':
         args.xaxis,
         args.value,
         args.count,
+        cost_limit=25,
         smooth=args.smooth,
         select=args.select,
         exclude=args.exclude,

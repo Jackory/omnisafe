@@ -21,6 +21,9 @@ import os
 import os.path as osp
 from typing import Any
 
+import matplotlib
+matplotlib.use('Agg')
+
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd

@@ -22,7 +22,7 @@ from omnisafe.common.offline.data_collector import OfflineDataCollector
 # python train_policy.py --algo PPO --env ENVID
 # where ENVID is the environment from which you want to collect data.
 
-ENV_NAME = 'SafetyPointCircle1-v0'
+ENV_NAME = 'SafetyCarCircle1-v0'
 SIZE = 2_000_000
 AGENTS = [
     ('./runs/PPO', 'epoch-500', 1_000_000),

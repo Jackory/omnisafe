@@ -455,7 +455,7 @@ class ExperimentGrid:
                 device = f'cuda:{device_id}'
                 self.update_dict(var, {'train_cfgs': {'device': device}})
             exp_name = recursive_dict2json(clean_var)
-            hashed_exp_name = var['env_id'][:30] + '---' + hash_string(exp_name)
+            hashed_exp_name = var['env_id'][:30] 
             exp_names.append(':'.join((hashed_exp_name[:5], exp_name)))
             exp_log_dir = os.path.join(self.log_dir, hashed_exp_name, '')
             if not var.get('logger_cfgs'):

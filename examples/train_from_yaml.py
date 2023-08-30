@@ -17,11 +17,11 @@ import omnisafe
 
 
 if __name__ == '__main__':
-    env_id = 'SafetyPointGoal1-v0'
+    env_id = 'SafetyCarGoal1-v0-modelbased'
 
-    agent = omnisafe.Agent('PPOLag', env_id)
+    agent = omnisafe.Agent('PETS', env_id)
     agent.learn()
 
     agent.plot(smooth=1)
-    agent.render(num_episodes=1, render_mode='rgb_array', width=256, height=256)
+    # agent.render(num_episodes=1, render_mode='rgb_array', width=256, height=256)
     agent.evaluate(num_episodes=1)
